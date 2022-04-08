@@ -1,0 +1,55 @@
+ERC standard for NFT
+
+ERC 20 -> Fungible
+ERC 994
+ERC 1155
+ERC 420
+
+OpenZepplin ->is a ERC implemented smart contract file already tested and secured enought use in our project.
+https://docs.openzeppelin.com/contracts/4.x/
+ERC 721 -> Standard Implementation for interface between app and contract to drive token. 
+IPFS -> interPlanetary File System is a protocol and peer-to-peer network for storing and sharing data in a distributed file system. 
+web3.js -> collection of libraries allow to interact with local or etherium node using http,IPC & websocket.
+ether.js -> ethers.js library aims to be a complete and compact library for interacting with the Ethereum Blockchain and its ecosystem.
+Hardhat -> like truffle framework to test, compile & deploy smart contract.
+Alchemy(alchemy.com)/Infura/Quick Node -> Blockchain API support for json-RPC like Ganache, No need to run blockchain node on our system
+sign up with -> 
+mailextra580@gmail.com
+Project name -> DemoNFT,
+TestRPC -> Ropsten,
+Pinata ->Simple way to upload and manage files on IPFS.
+https://app.pinata.cloud/pinmanager
+mailextra580@gmail.com
+@Pinata999
+
+E:\Blockchain\project\NFT(Visual code)
+$ npm init-> package.json initialistion
+$ npm install --save-dev hardhat
+$ npx hardhat(similar to $truffle init)
+You need to install these dependencies to run the sample project:
+  npm install --save-dev "hardhat@^2.8.4" "@nomiclabs/hardhat-waffle@^2.0.0" "ethereum-waffle@^3.0.0" "chai@^4.2.0" "@nomiclabs/hardhat-ethers@^2.0.0" "ethers@^5.0.0"
+$ npm install @openzeppelin/contracts
+cretae MyNFT.sol
+$ npm install dotenv --save (connecting alchemy to our metamask so that we can deploy our code)
+create .env file
+-add alchemy http link
+-add metamsk account key
+$ npm install --save-dev @nomiclabs/hardhat-ethers@^2.0.0 'ethers@^5.0.0' -> (ether.js lib)
+-refactor harhat.config.js with adding robston testRpc
+$ npx hardhat compile (Solidity version 0.8.7, nod.js 14.0.0)
+-create scripts/deploy.js (for deployement)
+$ npx hardhat run scripts/deploy.js --network ropsten
+-https://ropsten.etherscan.io/ (serach using contract address)
+----
+$ npm install @alch/alchemy-web3(alchemy provide web3.js libraray littile bit advance for coon b/w client(img) and contract)
+create scripts/mint-nft.js
+$ node .\scripts\mint-nft.js (just to check abi of contract fetching)
+-upload file on pinata & copy its hash link.
+$mkdir nft-metadata.json (it will store all the hash details of image)
+-again upload nft-metadat.json file in pinata 
+-complete mint-nft.js
+$ node .\scripts\mint-nft.js (run the transaction)
+-copy the transaction hash and check on etherscan.io
+-got to metamask mobile wallet add NFT-> paste hash-> enter token no.
+
+
