@@ -14,13 +14,13 @@ ether.js -> ethers.js library aims to be a complete and compact library for inte
 Hardhat -> like truffle framework to test, compile & deploy smart contract.
 Alchemy(alchemy.com)/Infura/Quick Node -> Blockchain API support for json-RPC like Ganache, No need to run blockchain node on our system
 sign up with -> 
-mailextra580@gmail.com
+mailextra580@*********
 Project name -> DemoNFT,
 TestRPC -> Ropsten,
 Pinata ->Simple way to upload and manage files on IPFS.
 https://app.pinata.cloud/pinmanager
-mailextra580@gmail.com
-@Pinata999
+mailextra580
+@***at***9
 
 E:\Blockchain\project\NFT(Visual code)
 $ npm init-> package.json initialistion
